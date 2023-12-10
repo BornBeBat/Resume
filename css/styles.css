@@ -8,8 +8,22 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
+  list-style: none;
+  padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  text-shadow: 0px 0px 3px #91ffff;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .wrapper {
   background: #ffffff;
   display: flex;
@@ -34,6 +48,14 @@ ol {
 }
 
 /* Sidebar-content */
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  padding-block: 0px;
+  padding: 14px;
+  margin: 15px;
+}
+
 .sidebar-content {
   padding-left: 40px;
   padding-top: 40px;
@@ -42,6 +64,16 @@ ol {
 }
 
 /* contacts-styles */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  fill: #e0ebfe;
+  stroke: black;
+  transform: translateY(10%);
+}
 .contacts-title {
   color: #161d2a;
   font-size: 22px;
@@ -51,18 +83,27 @@ ol {
   margin-bottom: 8px;
 }
 .contacts-type {
+  box-sizing: border-box;
   color: #161d2a;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
+  width: 24px;
+  height: 24px;
   margin-right: 8px;
+  overflow: visible;
+}
+.contacts-type svg {
+  overflow: visible;
 }
 .contacts-link {
-  color: #2979ff;
+  color: #14b8b8;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-decoration-line: underline;
+  transition: color ease-in-out 400ms;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #00eff0;
 }
 .contacts-item {
   margin-top: 0;
@@ -85,7 +126,7 @@ ol {
   margin-bottom: 8px;
 }
 .skills-list {
-  padding-left: 24px;
+  padding-left: 12px;
 }
 .skill-list-item {
   color: #161d2a;
@@ -105,7 +146,7 @@ ol {
   line-height: normal;
 }
 .soft-skills-list {
-  padding-left: 24px;
+  padding-left: 12px;
 }
 .soft-skills-item {
   color: #161d2a;
@@ -155,17 +196,26 @@ ol {
   padding-left: 16px;
 }
 .my-projects-item {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+
   color: #000;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 .my-projects-item-link {
-  color: #005fff;
+  color: #14b8b8;
+  transition: color ease-in-out 400ms;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-decoration-line: underline;
+}
+.my-projects-item-link:hover,
+.my-projects-item-link:focus {
+  color: #00eff0;
 }
 .my-project-item-tech {
   color: #595959;
@@ -195,7 +245,7 @@ ol {
   margin-bottom: 12px;
 }
 .company-name {
-  color: #6d9bf5;
+  color: #14b8b8;
 }
 .work-exp-period {
   color: #a8a8a8;
@@ -233,7 +283,7 @@ ol {
   margin-bottom: 8px;
 }
 .ed-university {
-  color: #6d9bf5;
+  color: #14b8b8;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
